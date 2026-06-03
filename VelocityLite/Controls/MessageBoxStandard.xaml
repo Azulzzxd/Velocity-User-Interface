@@ -5,7 +5,7 @@
              IsHitTestVisible="True" ClipToBounds="True">
     <Grid x:Name="RootGrid">
         <!-- The overlay background, just a note that it can stack when multiple controls are being spawned! (Needs CS logic fixing)-->
-        <Border x:Name="GlobalBackdrop" Background="#000000" Opacity="0" Visibility="Collapsed"/>
+        <Border x:Name="OverlayBackground" Background="#000000" Opacity="0" Visibility="Collapsed"/>
         <Border x:Name="DialogBorder" MinWidth="660" MinHeight="185" ClipToBounds="True" MaxHeight="600" MaxWidth="800" Background="#080808" BorderBrush="#191919" BorderThickness="1.5" CornerRadius="10" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="1" RenderTransformOrigin="0.5,0.5">
             <Grid>
                 <Grid.RowDefinitions>
