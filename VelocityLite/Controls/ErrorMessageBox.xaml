@@ -1,0 +1,206 @@
+﻿<Window x:Class="VelocityLite.Controls.ErrorMessageBox" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework" 
+        Title="Unexpected Error" Height="550" Width="750" WindowStartupLocation="CenterScreen" 
+        ResizeMode="CanResize" Background="#080808" WindowStyle="None" AllowsTransparency="False">
+
+    <shell:WindowChrome.WindowChrome>
+        <shell:WindowChrome CaptionHeight="1" ResizeBorderThickness="6" GlassFrameThickness="1" UseAeroCaptionButtons="False" />
+    </shell:WindowChrome.WindowChrome>
+    <Window.Resources>
+
+        <Style x:Key="TitleBarButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Width" Value="56" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontFamily" Value="Segoe Fluent Icons" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#5A5A6A" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="CloseButtonStyle" TargetType="Button" BasedOn="{StaticResource TitleBarButtonStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF3B3B" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#4A90E2" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="20,10" />
+            <Setter Property="FontWeight" Value="Medium" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="6" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#7BB0FF" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#3A80D2" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="#CCCCCC" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="#4A4A5A" />
+            <Setter Property="Padding" Value="20,10" />
+            <Setter Property="FontWeight" Value="Medium" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="6" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#3A78FF" />
+                                <Setter Property="BorderBrush" Value="#5A9BFF" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#2A5ACF" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="DarkGroupBoxStyle" TargetType="GroupBox">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderBrush" Value="#4A4A5A" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GroupBox">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" Background="#080808" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1,1,1,0" CornerRadius="4,4,0,0" Padding="10,6">
+                                <ContentPresenter ContentSource="Header" TextBlock.Foreground="{TemplateBinding Foreground}" TextBlock.FontWeight="Medium" />
+                            </Border>
+                            <Border Grid.Row="1" Background="#080808" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1,0,1,1" CornerRadius="0,0,4,4" Padding="{TemplateBinding Padding}">
+                                <ContentPresenter />
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Border BorderBrush="#4A4A5A" BorderThickness="1" Background="#080808">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="#080808" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,652,0" />
+                <TextBlock Grid.Column="1" Text="Unexpected Error" FontSize="15" RenderOptions.BitmapScalingMode="HighQuality" Foreground="White" VerticalAlignment="Center" Margin="8,0,0,0" FontFamily="Segoe UI" Height="20" />
+                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                    <Button Name="CloseButton" FontSize="10" Opacity="0.8" FontFamily="Segoe Fluent Icons" Content="&#xe8bb;" Foreground="White" Style="{StaticResource CloseButtonStyle}" Click="CloseButton_Click" />
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="0,0,0,20">
+                    <StackPanel Orientation="Horizontal">
+                        <Grid Width="56" Height="56" Margin="0,0,20,0">
+                            <Image Source="/Resource/Vel/Vel_meteor-HQ.png" RenderOptions.BitmapScalingMode="HighQuality" Margin="9,5,9,5" />
+                        </Grid>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Text="Velocity has run into an unexpected error" FontSize="18" FontWeight="SemiBold" Foreground="White" Margin="0,0,0,6" />
+                            <TextBlock Text=" This message contains information about where the application encountered the error." FontSize="15" Foreground="#AAAAAA" TextWrapping="Wrap" MaxWidth="550" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <GroupBox Grid.Row="1" Header="Error Details" Style="{StaticResource DarkGroupBoxStyle}" Margin="0,0,0,20" Padding="14">
+                    <StackPanel>
+                        <Grid Margin="0,0,0,14">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                                <TextBlock Text="Erorr code 0x0" FontSize="15" Foreground="White" FontWeight="Medium" Margin="14,0,0,0" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <Button Grid.Column="1" Name="CopyButton" Content="📋 Copy to Clipboard" Style="{StaticResource SecondaryButtonStyle}" FontSize="14" Padding="14,8" Click="CopyButton_Click" />
+                        </Grid>
+                        <Border Background="#080808" BorderBrush="#3A3A4A" BorderThickness="1" CornerRadius="4" Padding="14" Height="250">
+                            <ScrollViewer MaxHeight="240" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                                <TextBox Name="ErrorCodeTextBox" FontFamily="Consolas, Courier New, monospace" Foreground="#E0E0E0" Background="#080808" BorderThickness="0" BorderBrush="Transparent" Padding="4" FontSize="15" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" IsReadOnly="True" xml:space="preserve" Width="2699">
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Storm_IDE.Security.Session.DecryptSessionData()
+   at Storm_IDE.MainWindow.FetchSession()
+Inner Exception:
+System.IO.FileNotFoundException: Could not find file 'C:\Storm_IDE\config\session.key'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at Storm_IDE.Security.Session.LoadKey()
+                                </TextBox>
+                            </ScrollViewer>
+                        </Border>
+                    </StackPanel>
+                </GroupBox>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Name="OkButton" Content="OK" Style="{DynamicResource PrimaryButtonStyle}" IsDefault="True" Foreground="White" MinWidth="90" Click="OkButton_Click" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

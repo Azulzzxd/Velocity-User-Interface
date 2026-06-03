@@ -1,0 +1,148 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+	  <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationIcon>Resource\Vel\Meteor-HQ-NOR.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resource\Vel\Meteor-HQ-NOR.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Monaco Editor.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3650.58" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VelocityApi">
+      <HintPath>VelocityApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\Bt\Clear.png" />
+    <Resource Include="Resource\Bt\Cog_Settings-Fluent.png" />
+    <Resource Include="Resource\Bt\Copy_Term.png" />
+    <Resource Include="Resource\Bt\Inject1.png" />
+    <Resource Include="Resource\Bt\OpenFile.png" />
+    <Resource Include="Resource\Bt\RunFileExe.png" />
+    <Resource Include="Resource\Bt\SaveFile.png" />
+    <Resource Include="Resource\Client\BloxRoblox.png" />
+    <Resource Include="Resource\Exp\Bookmark.png" />
+    <Resource Include="Resource\Exp\chevron-right.png" />
+    <Resource Include="Resource\Exp\CommunityGlobe.png" />
+    <Resource Include="Resource\Exp\CommunityPeople.png" />
+    <Resource Include="Resource\Exp\ExpRefresh.png" />
+    <Resource Include="Resource\Exp\FluentRefresh.png" />
+    <Resource Include="Resource\Exp\NewFile.png" />
+    <Resource Include="Resource\Exp\OpenInExp.png" />
+    <Resource Include="Resource\Exp\Reload.png" />
+    <Resource Include="Resource\Exp\Script-File.png" />
+    <Resource Include="Resource\Exp\Script-File_Alt.png" />
+    <Resource Include="Resource\Exp\ScriptBloxOffline.png" />
+    <Resource Include="Resource\Exp\ScriptBloxWeb.png" />
+    <Resource Include="Resource\Exp\Search.png" />
+    <Resource Include="Resource\Exp\Star_Gold.png" />
+    <Resource Include="Resource\Exp\Tabs_chevron-right.png" />
+    <Resource Include="Resource\Exp\TXT-File.png" />
+    <Resource Include="Resource\Fonts\Inter-Italic-VariableFont_opsz,wght.ttf" />
+    <Resource Include="Resource\Fonts\Inter-VariableFont_opsz,wght.ttf" />
+    <Resource Include="Resource\Fonts\JetBrainsMono-Bold-Italic.ttf" />
+    <Resource Include="Resource\Fonts\JetBrainsMono-Bold.ttf" />
+    <Resource Include="Resource\Fonts\JetBrainsMono-ExtraBold-Italic.ttf" />
+    <Resource Include="Resource\Fonts\JetBrainsMono-ExtraBold.ttf" />
+    <Resource Include="Resource\Fonts\JetBrainsMono-Italic.ttf" />
+    <Resource Include="Resource\Fonts\JetBrainsMono-Medium-Italic.ttf" />
+    <Resource Include="Resource\Fonts\JetBrainsMono-Medium.ttf" />
+    <Resource Include="Resource\Fonts\JetBrainsMono-Regular.ttf" />
+    <Resource Include="Resource\Fonts\Segoe Fluent Icons.ttf" />
+    <Resource Include="Resource\Ico\ArrowRight.png" />
+    <Resource Include="Resource\Ico\dots3.png" />
+    <Resource Include="Resource\Ico\UpArrow.png" />
+    <Resource Include="Resource\Msg\BoxType_AntiVirus.png" />
+    <Resource Include="Resource\Msg\BoxType_Error.png" />
+    <Resource Include="Resource\Msg\BoxType_Info.png" />
+    <Resource Include="Resource\Msg\BoxType_Succ.png" />
+    <Resource Include="Resource\Msg\BoxType_Warn.png" />
+    <Resource Include="Resource\Settings\Settings_About.png" />
+    <Resource Include="Resource\Settings\Settings_Active.png" />
+    <Resource Include="Resource\Settings\Settings_Layout.png" />
+    <Resource Include="Resource\Settings\Settings_Logging.png" />
+    <Resource Include="Resource\Settings\Settings_Module-General.png" />
+    <Resource Include="Resource\Settings\Settings_Module.png" />
+    <Resource Include="Resource\Settings\Settings_Sidebar.png" />
+    <Resource Include="Resource\Settings\Settings_Support.png" />
+    <Resource Include="Resource\Settings\Settings_Window.png" />
+    <Resource Include="Resource\Sidebar\BoxCode.png" />
+    <Resource Include="Resource\Sidebar\Brush_Themes-Paint.png" />
+    <Resource Include="Resource\Sidebar\CloudNw.png" />
+    <Resource Include="Resource\Sidebar\Cloud_Script-Fluent.png" />
+    <Resource Include="Resource\Sidebar\Cog_Settings-Fluent.png" />
+    <Resource Include="Resource\Sidebar\discord.png" />
+    <Resource Include="Resource\Sidebar\Editor_code-Fluent.png" />
+    <Resource Include="Resource\Sidebar\Home_HomePage-Fluent.png" />
+    <Resource Include="Resource\Sidebar\NewsHome.png" />
+    <Resource Include="Resource\Sidebar\Nitro_Navigate_SYN.png" />
+    <Resource Include="Resource\Sidebar\PkgVelocity.png" />
+    <Resource Include="Resource\Sidebar\ScriptCloud.png" />
+    <Resource Include="Resource\Sidebar\Shell_Terminal-Line.png" />
+    <Resource Include="Resource\Sidebar\VeloPKG.png" />
+    <Resource Include="Resource\Sidebar\Vel_PKG.png" />
+    <Resource Include="Resource\Splash\Afternoon.png" />
+    <Resource Include="Resource\Splash\Evening.png" />
+    <Resource Include="Resource\Splash\Moring.png" />
+    <Resource Include="Resource\Splash\Night.png" />
+    <Resource Include="Resource\Tabs\Icons\Script-File_Alt.png" />
+    <Resource Include="Resource\Tabs\Icons\Star_Gold.png" />
+    <Resource Include="Resource\Tabs\Icons\Tabs_Game.png" />
+    <Resource Include="Resource\Tabs\Icons\Tabs_Test.png" />
+    <Resource Include="Resource\Tabs\Icons\Tabs_Tools.png" />
+    <Resource Include="Resource\Tabs\Icons\Tab_Automation.png" />
+    <Resource Include="Resource\Tabs\Icons\Tab_Bot.png" />
+    <Resource Include="Resource\Tabs\Icons\Tab_Person.png" />
+    <Resource Include="Resource\Tabs\Icons\Tab_Private.png" />
+    <Resource Include="Resource\Tabs\Icons\Tab_Secure.png" />
+    <Resource Include="Resource\Tabs\Icons\Tab_Thunderbolt.png" />
+    <Resource Include="Resource\Tabs\Menu\Tabs_chevron-right.png" />
+    <Resource Include="Resource\Tabs\Menu\Tabs_Pin.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Automation.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Bot.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Close.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_CloseAll.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Copy.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Execute.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Lock.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Lock_Out.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_None.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Person.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Private.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Rename.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Secure.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_SetIcon.png" />
+    <Resource Include="Resource\Tabs\Menu\Tab_Thunderbolt.png" />
+    <Resource Include="Resource\Vel\Vel_meteor-HQ.png" />
+    <Resource Include="Resource\Vel\Vel_meteor.png" />
+    <Resource Include="Resource\Vel\VEL_testBanner.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="lib\VelocityAPI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="VelocityAPI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
