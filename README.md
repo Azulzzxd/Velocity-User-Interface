@@ -42,7 +42,7 @@ Because of how the [.NET framework](https://en.wikipedia.org/wiki/.NET) works, t
 
 Oh, and also because I feel bad for the skids that failed miserably to restore the Ui.
 
-> Just a note from me: your decompile was relatively poor in quality. Your GPT prompts did not restore the Win32 logic, and half of the code was like spaghetti. I also find it funny that you described the condition of the decompile as “near mint because that was way below "good" let alone "near mint". Maybe put more effort into it next time.
+> Just a note from me: your decompile was relatively poor in quality. Your GPT prompts did not restore the Win32 logic and half of the code was like spaghetti. I also find it funny that you described the condition of the decompile as “near mint" because that was way below "good" let alone "near mint". Maybe put more effort into it next time.
 >
 > Love, your dearest Azul :)
 # But this looks different than the current one?
