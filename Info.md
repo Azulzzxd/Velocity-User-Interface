@@ -2,12 +2,13 @@
 <tr>
 <td align="center" style="background-color:#fff3cd; border:1px solid #ffe69c; border-radius:12px; padding:16px;">
 
-<strong>This user interface has officially reached it's end-of-life and so has my development at Velocity..</strong><br>
-No updates nor fixes will be provided by me.
+<strong>Gladly use this source-repo for learning NET-UI development!</strong><br>
+Of course crediting the repo would be appreciated. This code is not perfect, but it *can* be used as learning-material. 
+
+Use it wisely! 
 </td>
 </tr>
 </table>
-
 
 # Why publish?
 
@@ -20,11 +21,10 @@ Because of how the [.NET framework](https://en.wikipedia.org/wiki/.NET) works, t
 > Just a note from me for the skids: your decompile was relatively poor in quality. Your GPT prompts did not restore the Win32 logic and half of the code was like spaghetti. I also find it funny that you described the condition of the decompile as “near mint" because that was way below "good" let alone "near mint". Maybe put more effort into it next time.
 >
 > Love, your dearest Azul :)
-# But this looks different than the current one?
 
-# What was new in the beta release?
+# What does this include?
 
-Glad you asked! After the initial release of the new interface, many people provided feedback which helped me figure out what people actually wanted.
+After the initial release of the new interface, many people provided feedback which helped me figure out what people actually wanted.
 
 ## The following was added/brought back from the old interface
 * The **Client Manager** was brought back with an option to toggle it off
@@ -39,6 +39,3 @@ Glad you asked! After the initial release of the new interface, many people prov
 * **Accent colors**
 * **Support for animated GIFs in the media overlay**
 * A new **WinUI-like title bar effect**
-
-# Downloads for us users?
-You can find precompiled downloads under the ***Releases*** tab, hope you enjoy using Velocity! 
