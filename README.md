@@ -3,7 +3,7 @@
 <tr>
 <td align="center" style="background-color:#fff3cd; border:1px solid #ffe69c; border-radius:12px; padding:16px;">
 
-<strong>This user interface has officially reached it's end-of-life and so has my development at Velocity..</strong><br>
+<strong>This user interface has officially reached it's end-of-life and so has my development at Velocity.</strong><br>
 No updates nor fixes will be provided by me.
 </td>
 </tr>
