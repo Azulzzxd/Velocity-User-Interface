@@ -1,11 +1,15 @@
+
+<table align="center">
+<tr>
+<td align="center" style="background-color:#fff3cd; border:1px solid #ffe69c; border-radius:12px; padding:16px;">
+
+<strong>This user interface has officially reached it's end-of-life.</strong><br>
+No updates nor fixes will be provided by me.
+</td>
+</tr>
+</table>
+
 <div align="center">
-
-  <img width="1075" height="133" src="https://github.com/user-attachments/assets/eb489640-3355-4884-9a68-e40ef37b7915" />
-
-  <p style="font-size: 20px; font-weight: 700; margin: 10px 0 18px 0;">
-    Property of Velocity Softworks - Provided by Azul
-  </p>
-
   <a href="https://getvelocity.llc">
     <img src="https://img.shields.io/badge/Website-getvelocity.llc-blue?style=for-the-badge" />
   </a>
@@ -17,6 +21,10 @@
   <p style="margin-top: 15px; font-size: 12px; opacity: 0.7;">
     © 2022–2026 Velocity Softworks. All rights reserved.
   </p>
+
+</div>
+
+<div align="center">
 
 </div>
 
