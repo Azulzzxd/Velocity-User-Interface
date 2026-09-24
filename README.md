@@ -18,10 +18,6 @@ No updates nor fixes will be provided by me.
     <img src="https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
 
-  <p style="margin-top: 15px; font-size: 12px; opacity: 0.7;">
-    © 2022–2026 Velocity Softworks. All rights reserved.
-  </p>
-
 </div>
 
 <div align="center">
