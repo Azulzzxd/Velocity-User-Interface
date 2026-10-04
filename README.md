@@ -10,6 +10,11 @@ No updates nor fixes will be provided by me.
 </table>
 
 <div align="center">
+
+# The download has been taken down due to it being outdated, use the work.ink! 
+</div>
+
+<div align="center">
   <a href="https://getvelocity.llc">
     <img src="https://img.shields.io/badge/Website-getvelocity.llc-blue?style=for-the-badge" />
   </a>
