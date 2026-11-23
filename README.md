@@ -11,8 +11,6 @@ No updates nor fixes will be provided by me.
 
 <div align="center">
 
-** All links have been moved down. I do not wish to promote this kind of software on the top of the page. **
-
 **With all due and respect, please stop using lego hacks. Be a normal person and play normally.**
 > it is not worth the risks you gain by using them. It is not the same as it used to be back in the golden days, and it's time to accept that.
 
